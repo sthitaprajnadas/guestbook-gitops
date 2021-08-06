@@ -20,7 +20,7 @@ env:
   AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  CONTAINER_IMAGE: guestbook:${{ github.sha }}
+  CONTAINER_IMAGE: guestbook-gitops-flux:${{ github.sha }}
 
 jobs:
   build-and-push:
